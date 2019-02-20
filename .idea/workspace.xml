@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ba46272-fc35-4591-897c-53084de17c79" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/model/Director.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stats/StatsMovies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/AppWS.py" beforeDir="false" afterPath="$PROJECT_DIR$/ws/AppWS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/Director.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/ExtractorAttributesPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/indexer/ExtractorAttributesPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/JSONEncoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/converters/JSONEncoder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/MongoPersistence.py" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/MongoPersistence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/Movie.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Movie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/StatsMovies.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/WebCrawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/indexer/WebCrawler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/indexer/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/indexer/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Novo Documento de Texto.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -366,9 +355,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17038691" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17038691" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3290938" />
