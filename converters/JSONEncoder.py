@@ -1,5 +1,4 @@
-from indexer.Movie import Movie
-import json
+from model.Movie import Movie
 
 
 class JSONEncoder:
@@ -15,6 +14,7 @@ class JSONEncoder:
             "genre": self.movie.genres,
             "director_name": self.movie.director.name,
             "director_country": self.movie.director.country,
+            "director_position": self.movie.director.position,
             "director_genre": self.movie.director.genre}
         return movie_dict
 

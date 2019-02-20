@@ -1,4 +1,4 @@
-from indexer import Director
+from model import Director
 
 
 class Movie(object):

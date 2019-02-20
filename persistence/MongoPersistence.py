@@ -1,6 +1,6 @@
 from pymongo import MongoClient
 
-from indexer.Movie import Movie
+from model.Movie import Movie
 
 
 class MongoPersistence:
@@ -27,6 +27,9 @@ class MongoPersistence:
 
     def find_one(self, query):
         return self.connect().find_one(query)
+
+    def get_total(self):
+        return self.connect().find({}).count()
 
     def aggregate(self, query):
         return self.connect().aggregate(query)

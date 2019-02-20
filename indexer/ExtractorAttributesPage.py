@@ -1,11 +1,11 @@
-import requests
-from bs4 import BeautifulSoup
 import re as regex
 
-from indexer.JSONEncoder import JSONEncoder
-from indexer.Director import Director
-from indexer.Movie import Movie
-from indexer.MongoPersistence import MongoPersistence
+import requests
+from bs4 import BeautifulSoup
+
+from model.Director import Director
+from converters.JSONEncoder import JSONEncoder
+from model.Movie import Movie
 
 
 class ExtractorAttributesPage:
@@ -26,10 +26,10 @@ class ExtractorAttributesPage:
 
         genres = []
         for genre in title_wrapper.div.find('a', attrs={'href': regex.compile(r'genres*')}):
-            genres.append(genre.text)
+            genres.append(genre)
 
-        director_name, director_country = self.extract_director_properties(page_movie)
-        director = Director(director_name, director_country)
+        director_name, director_country, position_director = self.extract_director_properties(page_movie)
+        director = Director(director_name, director_country, position_director, 'F')
         movie = Movie(title_movie, duration_minutes, ratting, genres, director)
 
         return movie
@@ -45,7 +45,9 @@ class ExtractorAttributesPage:
                 director_name = header_information.find('span', {'class': 'itemprop'}).text
                 country = soup.find('div', {'id': 'name-born-info'}).find('a', attrs={
                     'href': regex.compile('birth_place*')}).text.split(',')[2]
-                return director_name, country
+                position_director = int(soup.find('span', {'id': 'meterChange'}).text)
+
+                return director_name, country, position_director
 
 
 
@@ -53,7 +55,5 @@ if __name__ == '__main__':
     extractor = ExtractorAttributesPage("https://www.imdb.com/title/tt1477834/?ref_=rvi_tt", "https://www.imdb.com/")
     movie = extractor.extract()
     movie_in_json = JSONEncoder(movie).to_json()
-    mongo_store = MongoPersistence("mongodb://MarcosNeco:familia1993@ds237955.mlab.com:37955/movie_imdb")
-    mongo_store.persist(movie_in_json)
     print(movie_in_json)
 
