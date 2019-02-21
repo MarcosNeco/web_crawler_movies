@@ -30,11 +30,11 @@ class StatsMovies:
         for total_genre in total_genres:
             same_genre = next((v for v in high_eight_by_genre if v['_id'] == total_genre['_id']), None)
             if same_genre is not None:
-                prob_by_genre = {"genre": total_genre['_id'],
-                                 'probability': StatsMovies.calc_probability(same_genre['count'], total_genre['count'])
+                prob_by_genre = {"gênero": total_genre['_id'],
+                                 'probabilidade': StatsMovies.calc_probability(same_genre['count'], total_genre['count'])
                                  }
             else:
-                prob_by_genre = {"genre": total_genre['_id'], 'probability': 0}
+                prob_by_genre = {"gênero": total_genre['_id'], 'probabilidade': 0}
             prob_high_eight_genre.append(prob_by_genre)
 
         return prob_by_genre
@@ -55,9 +55,16 @@ class StatsMovies:
         return StatsMovies.calc_probability(director_high_eight_non_american['count'], total_director_non_american['count'])
 
     @staticmethod
-    def getTopDirectors(mongo_persistence: MongoPersistence, top: int):
+    def get_top_directors(mongo_persistence: MongoPersistence, top: int):
         ascending = -1
-        return list(mongo_persistence.find({'projection': ['director_position', 'director_name']}).sort("director_position", ascending).limit(top))
+        directors_prefered = mongo_persistence.find({}, {"director_name": 1, '_id': 0})\
+            .sort('director_position', ascending).limit(top)
+
+        directors = []
+        for director in directors_prefered:
+            directors.append(director['director_name'])
+
+        return directors
 
     @staticmethod
     def calc_probability(sample, total):

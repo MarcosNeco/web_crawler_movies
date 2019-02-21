@@ -22,8 +22,8 @@ class MongoPersistence:
             update_query = {"$set": movie_to_store}
             movie_collection.update_one({"_id": movie_saved['_id']}, update_query)
 
-    def find(self, query):
-        return self.connect().find(query)
+    def find(self, filters={}, fields={}):
+        return self.connect().find(filters, fields)
 
     def find_one(self, query):
         return self.connect().find_one(query)

@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+import re as regex
 import requests
 
 
@@ -19,9 +20,12 @@ class WebCrawler:
                     return url_movies
 
                 href = link.get('href')
-                if href is not None:
+                if href is not None and href:
                     if '/title/tt' in href:
-                        url_movies.append(current_url + href)
+                        href_cleaned = regex.sub('.+?(?=/title)', '', href)
+                        href_to_index = initial_url + href_cleaned
+                        url_movies.append(href_to_index)
+                        print("indexed url:" + href_to_index + "|total:" + str(len(url_movies)))
                     elif href[0] == "/":
                         to_crawl.append(current_url + href)
 
@@ -29,5 +33,5 @@ class WebCrawler:
 
 
 if __name__ == '__main__':
-    url = index_url_movies("https://www.imdb.com/", 100)
+    url = WebCrawler.index_url_movies("https://www.imdb.com/", 1000)
     print(*url, sep='\n')
