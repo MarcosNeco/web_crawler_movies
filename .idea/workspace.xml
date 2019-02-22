@@ -3,12 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="4ba46272-fc35-4591-897c-53084de17c79" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppStart.py" beforeDir="false" afterPath="$PROJECT_DIR$/AppStart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppStart.py" beforeDir="false" afterPath="$PROJECT_DIR$/IndexerStart.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/indexer/ExtractorAttributesPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/indexer/ExtractorAttributesPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/indexer/WebCrawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/indexer/WebCrawler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/MongoPersistence.py" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/MongoPersistence.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/indexer/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stats/StatsMovies.py" beforeDir="false" afterPath="$PROJECT_DIR$/stats/StatsMovies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ws/AppWS.py" beforeDir="false" afterPath="$PROJECT_DIR$/ws/AppWS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ws/AppWS.py" beforeDir="false" afterPath="$PROJECT_DIR$/ws/WSStart.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,13 +19,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ExtractorAttributesPage.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ExtractorAttributesPage.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/indexer/ExtractorAttributesPage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="77" column="48" lean-forward="true" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="48" />
+            <state relative-caret-position="83">
+              <caret line="57" column="98" selection-start-line="57" selection-start-column="98" selection-end-line="57" selection-end-column="98" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExtractorAttributesPageTest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/ExtractorAttributesPageTest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -34,40 +46,28 @@
       <file leaf-file-name="codecs.py" pinned="false" current-in-tab="false">
         <entry file="file://C:/python3.7/Lib/codecs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="5270">
               <caret line="311" selection-start-line="311" selection-end-line="311" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MongoPersistence.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/persistence/MongoPersistence.py">
+      <file leaf-file-name="WebCrawlerTest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/WebCrawlerTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="64">
+              <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppStart.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AppStart.py">
+      <file leaf-file-name="WSStart.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ws/WSStart.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppWS.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ws/AppWS.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="-237">
               <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -76,38 +76,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/python3.7/Lib/site-packages/flask/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30073">
-              <caret line="1798" selection-start-line="1798" selection-end-line="1798" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="StatsMovies.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stats/StatsMovies.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1003">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="153">
+              <caret line="9" column="77" selection-start-line="9" selection-start-column="77" selection-end-line="9" selection-end-column="77" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JSONEncoder.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/converters/JSONEncoder.py">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="68">
+              <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -115,7 +106,7 @@
       <file leaf-file-name="WebCrawler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/indexer/WebCrawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
+            <state relative-caret-position="50">
               <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -166,19 +157,22 @@
         <option value="$PROJECT_DIR$/indexer/Director.py" />
         <option value="$PROJECT_DIR$/indexer/JSONEncoder.py" />
         <option value="$PROJECT_DIR$/indexer/StatsMovies.py" />
-        <option value="$PROJECT_DIR$/indexer/tests.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/persistence/MongoPersistence.py" />
-        <option value="$PROJECT_DIR$/stats/StatsMovies.py" />
         <option value="$PROJECT_DIR$/AppStart.py" />
         <option value="$PROJECT_DIR$/ws/AppWS.py" />
+        <option value="$PROJECT_DIR$/indexer/tests.py" />
+        <option value="$PROJECT_DIR$/stats/StatsMovies.py" />
+        <option value="$PROJECT_DIR$/IndexerStart.py" />
         <option value="$PROJECT_DIR$/indexer/WebCrawler.py" />
+        <option value="$PROJECT_DIR$/tests/WebCrawlerTest.py" />
         <option value="$PROJECT_DIR$/indexer/ExtractorAttributesPage.py" />
+        <option value="$PROJECT_DIR$/tests/ExtractorAttributesPageTest.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="1343" />
     <option name="height" value="688" />
   </component>
@@ -187,7 +181,30 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="web_crawler_movies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_crawler_movies" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_crawler_movies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_crawler_movies" type="462c0819:PsiDirectoryNode" />
+              <item name="indexer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_crawler_movies" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_crawler_movies" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/persistence" />
@@ -197,11 +214,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\projetos_python\web_crawler_movies\tests" />
       <recent name="E:\projetos_python\web_crawler_movies\converters" />
       <recent name="E:\projetos_python\web_crawler_movies\ws" />
       <recent name="E:\projetos_python\web_crawler_movies\persistence" />
       <recent name="E:\projetos_python\web_crawler_movies\stats" />
-      <recent name="E:\projetos_python\web_crawler_movies\model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -216,111 +233,86 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.AppWS">
-    <configuration name="AppStart" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python tests.Unittests for ExtractorAttributesPageTest.ExtractorAttributesPageTest">
+    <configuration name="Unittests for ExtractorAttributesPageTest.ExtractorAttributesPageTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="web_crawler_movies" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AppStart.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;ExtractorAttributesPageTest.ExtractorAttributesPageTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="AppWS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests for ExtractorAttributesPageTest.ExtractorAttributesPageTest.test_extract_properties_from_one_movie" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="web_crawler_movies" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ws" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ws/AppWS.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;ExtractorAttributesPageTest.ExtractorAttributesPageTest.test_extract_properties_from_one_movie&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="ExtractorAttributesPage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests for WebCrawlerTest.WebCrawlerTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="web_crawler_movies" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/indexer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/indexer/ExtractorAttributesPage.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;WebCrawlerTest.WebCrawlerTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="WebCrawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests for WebCrawlerTest.WebCrawlerTest.test_patter_movie_url" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="web_crawler_movies" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/indexer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/indexer/WebCrawler.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;WebCrawlerTest.WebCrawlerTest.test_patter_movie_url&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests in ExtractorAttributesPageTest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="web_crawler_movies" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/indexer" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/indexer/tests.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/ExtractorAttributesPageTest.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list>
-      <item itemvalue="Python.ExtractorAttributesPage" />
-      <item itemvalue="Python.tests" />
-      <item itemvalue="Python.AppWS" />
-      <item itemvalue="Python.AppStart" />
-      <item itemvalue="Python.WebCrawler" />
+      <item itemvalue="Python tests.Unittests for WebCrawlerTest.WebCrawlerTest.test_patter_movie_url" />
+      <item itemvalue="Python tests.Unittests for WebCrawlerTest.WebCrawlerTest" />
+      <item itemvalue="Python tests.Unittests in ExtractorAttributesPageTest.py" />
+      <item itemvalue="Python tests.Unittests for ExtractorAttributesPageTest.ExtractorAttributesPageTest.test_extract_properties_from_one_movie" />
+      <item itemvalue="Python tests.Unittests for ExtractorAttributesPageTest.ExtractorAttributesPageTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.AppWS" />
-        <item itemvalue="Python.AppStart" />
-        <item itemvalue="Python.ExtractorAttributesPage" />
-        <item itemvalue="Python.WebCrawler" />
-        <item itemvalue="Python.tests" />
+        <item itemvalue="Python tests.Unittests for ExtractorAttributesPageTest.ExtractorAttributesPageTest" />
+        <item itemvalue="Python tests.Unittests for ExtractorAttributesPageTest.ExtractorAttributesPageTest.test_extract_properties_from_one_movie" />
+        <item itemvalue="Python tests.Unittests in ExtractorAttributesPageTest.py" />
+        <item itemvalue="Python tests.Unittests for WebCrawlerTest.WebCrawlerTest" />
+        <item itemvalue="Python tests.Unittests for WebCrawlerTest.WebCrawlerTest.test_patter_movie_url" />
       </list>
     </recent_temporary>
   </component>
@@ -337,16 +329,48 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_ExtractorAttributesPageTest_py - 2019.02.22 at 02h 16m 29s.xml">
+      <configuration name="Unittests in ExtractorAttributesPageTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_ExtractorAttributesPageTest_py - 2019.02.22 at 02h 17m 05s.xml">
+      <configuration name="Unittests in ExtractorAttributesPageTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_ExtractorAttributesPageTest_py - 2019.02.22 at 02h 17m 39s.xml">
+      <configuration name="Unittests in ExtractorAttributesPageTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_ExtractorAttributesPageTest_py - 2019.02.22 at 02h 18m 14s.xml">
+      <configuration name="Unittests in ExtractorAttributesPageTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_ExtractorAttributesPageTest_py - 2019.02.22 at 02h 22m 25s.xml">
+      <configuration name="Unittests in ExtractorAttributesPageTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_ExtractorAttributesPageTest_py - 2019.02.22 at 02h 22m 31s.xml">
+      <configuration name="Unittests in ExtractorAttributesPageTest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_ExtractorAttributesPageTest_ExtractorAttributesPageTest_test_extract_properties_from_one_movie - 2019.02.22 at 02h 24m 28s.xml">
+      <configuration name="Unittests for ExtractorAttributesPageTest.ExtractorAttributesPageTest.test_extract_properties_from_one_movie" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_ExtractorAttributesPageTest_ExtractorAttributesPageTest - 2019.02.22 at 02h 24m 35s.xml">
+      <configuration name="Unittests for ExtractorAttributesPageTest.ExtractorAttributesPageTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_ExtractorAttributesPageTest_ExtractorAttributesPageTest_test_extract_properties_from_one_movie - 2019.02.22 at 02h 26m 31s.xml">
+      <configuration name="Unittests for ExtractorAttributesPageTest.ExtractorAttributesPageTest.test_extract_properties_from_one_movie" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_ExtractorAttributesPageTest_ExtractorAttributesPageTest - 2019.02.22 at 02h 31m 20s.xml">
+      <configuration name="Unittests for ExtractorAttributesPageTest.ExtractorAttributesPageTest" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.17038691" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2611607" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3290938" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31518152" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31518152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -362,21 +386,21 @@
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.17038691" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3290938" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.31518152" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39768976" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3290938" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -401,17 +425,12 @@
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/indexer/tests.py</url>
-          <line>37</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ws/AppWS.py</url>
+          <url>file://$PROJECT_DIR$/ws/WSStart.py</url>
           <line>27</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ws/AppWS.py</url>
+          <url>file://$PROJECT_DIR$/ws/WSStart.py</url>
           <line>18</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
@@ -421,25 +440,35 @@
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/indexer/ExtractorAttributesPage.py</url>
-          <line>50</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/indexer/ExtractorAttributesPage.py</url>
-          <line>63</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/indexer/ExtractorAttributesPage.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <condition expression="'movies-in-theaters' in href" language="Python" />
           <url>file://$PROJECT_DIR$/indexer/WebCrawler.py</url>
           <line>26</line>
           <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/stats/StatsMovies.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/stats/StatsMovies.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/stats/StatsMovies.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/ExtractorAttributesPageTest.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/ExtractorAttributesPageTest.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -452,7 +481,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="63" />
+      <option name="time" value="69" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -564,30 +593,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/persistence/MongoPersistence.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="31" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="18" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stats/StatsMovies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="60" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/indexer/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="41" column="26" lean-forward="true" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/converters/JSONEncoder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -633,7 +638,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/indexer/tests.py">
+    <entry file="file://$PROJECT_DIR$/tests/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
@@ -654,7 +659,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ws/AppWS.py">
+    <entry file="file://$PROJECT_DIR$/ws/WSStart.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="19" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="6" selection-end-column="19" />
@@ -843,24 +848,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/indexer/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -871,26 +862,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stats/StatsMovies.py">
+    <entry file="file://$PROJECT_DIR$/converters/JSONEncoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python3.7/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5270">
+          <caret line="311" selection-start-line="311" selection-end-line="311" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/persistence/MongoPersistence.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="105">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ws/AppWS.py">
+    <entry file="file://$PROJECT_DIR$/ws/WSStart.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="-237">
           <caret line="11" column="53" selection-start-line="11" selection-start-column="53" selection-end-line="11" selection-end-column="53" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
@@ -898,9 +896,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/IndexerStart.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#0#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stats/StatsMovies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="77" selection-start-line="9" selection-start-column="77" selection-end-line="9" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/indexer/WebCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
+        <state relative-caret-position="50">
           <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -908,37 +923,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AppStart.py">
+    <entry file="file://$PROJECT_DIR$/indexer/ExtractorAttributesPage.py___jb_tmp___">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+        <state relative-caret-position="-1086" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/WebCrawlerTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
           <folding>
-            <element signature="e#0#46#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/converters/JSONEncoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/python3.7/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="311" selection-start-line="311" selection-end-line="311" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/indexer/ExtractorAttributesPage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="77" column="48" lean-forward="true" selection-start-line="77" selection-start-column="48" selection-end-line="77" selection-end-column="48" />
+        <state relative-caret-position="83">
+          <caret line="57" column="98" selection-start-line="57" selection-start-column="98" selection-end-line="57" selection-end-column="98" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/ExtractorAttributesPageTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
         </state>
       </provider>
     </entry>

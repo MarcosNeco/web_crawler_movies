@@ -55,14 +55,14 @@ class ExtractorAttributesPage:
                 page_director = requests.get(self.url_base + director_href).content
                 soup = BeautifulSoup(page_director, 'html.parser')
                 header_information = soup.find('h1', {'class': 'header'})
-                director_name = header_information.find('span', {'class': 'itemprop'}).text
+                director_name = header_information.find('span', {'class': 'itemprop'}).text.strip()
 
                 tag_born = soup.find('div', {'id': 'name-born-info'})
                 if tag_born is None:
                     country = None
                 else:
                     country = soup.find('div', {'id': 'name-born-info'}).find('a', attrs={
-                        'href': regex.compile('birth_place*')}).text.split(',')[-1]
+                        'href': regex.compile('birth_place*')}).text.split(',')[-1].strip()
 
                 tag_position_director = regex.sub("[^0-9]", "", soup.find('span', {'id': 'meterChange'}).text)
                 position_director = int(tag_position_director)

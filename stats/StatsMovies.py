@@ -37,7 +37,7 @@ class StatsMovies:
                 prob_by_genre = {"gênero": total_genre['_id'], 'probabilidade': 0}
             prob_high_eight_genre.append(prob_by_genre)
 
-        return prob_by_genre
+        return prob_high_eight_genre
 
     @staticmethod
     def probab_higher_than_eight_director_non_american(mongo_persistence: MongoPersistence):

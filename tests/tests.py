@@ -43,8 +43,8 @@ if __name__ == '__main__':
     #test_probability_director_female()
     #$test_avg_duration_movies()
     #test_ratting_high_than_eight()
-    #test_ratting_high_than_eight_by_genre()
-    test_probab_higher_than_eight_director_non_american()
+    test_ratting_high_than_eight_by_genre()
+    #test_probab_higher_than_eight_director_non_american()
     #test_persist_movies()
     #test_top10_directtors()
 

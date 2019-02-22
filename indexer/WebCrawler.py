@@ -21,17 +21,12 @@ class WebCrawler:
 
                 href = link.get('href')
                 if href is not None and href:
-                    if '/title/tt' in href:
-                        href_cleaned = regex.sub('.+?(?=/title)', '', href)
-                        href_to_index = initial_url + href_cleaned
-                        url_movies.append(href_to_index)
-                        print("indexed url:" + href_to_index + "|total:" + str(len(url_movies)))
-                    elif href[0] == "/":
-                        to_crawl.append(current_url + href)
+                    href_cleaned = regex.sub('.+?(?=/title)', '', href)
+                    url_to_index = initial_url + href_cleaned
+                    if '/title/tt' in href and url_to_index not in url_movies:
+                        url_movies.append(url_to_index)
+                        print("indexed url:" + url_to_index + "|total:" + str(len(url_movies)))
+                    elif href[0] == "/" and url_to_index not in to_crawl:
+                        to_crawl.append(url_to_index)
 
         return []
-
-
-if __name__ == '__main__':
-    url = WebCrawler.index_url_movies("https://www.imdb.com/", 1000)
-    print(*url, sep='\n')
