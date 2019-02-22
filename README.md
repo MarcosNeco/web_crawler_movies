@@ -25,6 +25,15 @@
  
 <h1>MongoDB</h1>
  Para o banco mongo foi utilizado sua versão na nuvem, que fica hospedado na url https://mlab.com/, para esse projeto foi criado um database especefício e uma collection especifíca. É possível passar a url de conexão com o mongo na inicialização do script python, caso contrário ele ira assumir o defaul hospedado na nuvem.
+ 
+<h1>Testes Unitários</h1>
+Foram criados testes unitários para duas classes em especifíco, a classe principal que contém o código de indexação:
+
+```WebCrawlerTest.py```
+
+E para o teste de extração de propriedades das páginas de filme foi criado o teste:
+
+```ExtractorAttributesPageTest.py```
 
 <h1>Execução scripts</h1>
 Existem dois scripts que podem iniciados individualmente, um deles é:
