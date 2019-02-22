@@ -2,9 +2,14 @@ from converters.JSONEncoder import JSONEncoder
 from indexer.ExtractorAttributesPage import ExtractorAttributesPage
 from indexer.WebCrawler import WebCrawler
 from persistence.MongoPersistence import MongoPersistence
+import sys
 
 if __name__ == '__main__':
-    url_connection_db = "mongodb://movie_imdb:movieisc0l@ds237955.mlab.com:37955/movie_imdb"
+    if len(sys.argv) > 1 and sys.argv[1] is not None:
+        url_connection_db = sys.argv[1]
+    else:
+        url_connection_db = "mongodb://movie_imdb:movieisc0l@ds237955.mlab.com:37955/movie_imdb"
+
     url_base = "https://www.imdb.com/"
     max_movies_to_index = 1000
 

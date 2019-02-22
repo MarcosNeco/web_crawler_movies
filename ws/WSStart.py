@@ -2,13 +2,18 @@ from flask import Flask
 
 from persistence.MongoPersistence import MongoPersistence
 from stats.StatsMovies import StatsMovies
+import sys
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def get_movies():
-    url_connection_db = "mongodb://movie_imdb:movieisc0l@ds237955.mlab.com:37955/movie_imdb"
+    if len(sys.argv) > 1 and sys.argv[1] is not None:
+        url_connection_db = sys.argv[1]
+    else:
+        url_connection_db = "mongodb://movie_imdb:movieisc0l@ds237955.mlab.com:37955/movie_imdb"
+
     persistence = MongoPersistence(url_connection_db)
     prob_woman_director = StatsMovies.probability_director_female(persistence)
     mean_duration_movies = StatsMovies.mean_duration_movies(persistence)
@@ -18,12 +23,12 @@ def get_movies():
 
     content = """<h1>Estatísticas dos filmes</h1>
               <ul>
-                <li>Qual a probabilidade de uma mulher ser diretora do filme? {prob_woman_director}% </li>
-                <li>Qual o tempo de duração médio dos filmes obtidos? {mean_duration_movies} minutos </li>
+                <li>Qual a probabilidade de uma mulher ser diretora do filme? {prob_woman_director}% </li></br>
+                <li>Qual o tempo de duração médio dos filmes obtidos? {mean_duration_movies} minutos </li></br>
                 <li>Qual a probabilidade de cada filme em seu gênero ter uma avaliação 
-                   superior a 8? {prob_higher_eight_by_genre}</li>
+                   superior a 8? {prob_higher_eight_by_genre}</li></br>
                 <li>Qual a probabilidade de um filme ter avaliação superior a 8, considerando que
-                ele não possui um diretor americano? {prob_director_non_american}%</li>
+                ele não possui um diretor americano? {prob_director_non_american}%</li></br>
                 <li>quais são os diretores preferidos? {prefered_directors}</li>
               </ul>""".format(prob_woman_director=round(prob_woman_director, 2),
                               mean_duration_movies=round(mean_duration_movies, 2),
